@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>ace</artifactId>
-  <version>04.09.2013</version>
+  <version>04.09.2013-SNAPSHOT</version>
   <name>ace</name>
   <description>WebJar for the ace editor</description>
   <url>http://webjars.org</url>
@@ -37,7 +37,7 @@
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <upstream.version>${project.version}</upstream.version>
+    <upstream.version>04.09.2013</upstream.version>
     <commit>1d8a5a3b39dde30c3f652c8c9f3f26a9b4016e70</commit>
     <upstream.url>https://github.com/ajaxorg/ace-builds/archive</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
@@ -90,7 +90,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>2.4.1</version>
       </plugin>
     </plugins>
   </build>
