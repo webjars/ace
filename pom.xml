@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>ace</artifactId>
-  <version>04.09.2014-SNAPSHOT</version>
+  <version>07.31.2013-SNAPSHOT</version>
   <name>ace</name>
   <description>WebJar for the ace editor</description>
   <url>http://webjars.org</url>
@@ -37,8 +37,8 @@
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <upstream.version>04.09.2013</upstream.version>
-    <commit>1d8a5a3b39dde30c3f652c8c9f3f26a9b4016e70</commit>
+    <upstream.version>07.31.2013</upstream.version>
+    <commit>995de31e6513ddfd5e9f66b8216f5b316fcd2253</commit>
     <upstream.url>https://github.com/ajaxorg/ace-builds/archive</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
   </properties>
