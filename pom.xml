@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>ace</artifactId>
-  <version>07.31.2014-SNAPSHOT</version>
+  <version>01.08.2014-SNAPSHOT</version>
   <name>ace</name>
   <description>WebJar for the ace editor</description>
   <url>http://webjars.org</url>
@@ -37,8 +37,8 @@
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <upstream.version>07.31.2013</upstream.version>
-    <commit>995de31e6513ddfd5e9f66b8216f5b316fcd2253</commit>
+    <upstream.version>01.08.2014</upstream.version>
+    <commit>b2f8bf1e745250596afea5b39c70b94421af906d</commit>
     <upstream.url>https://github.com/ajaxorg/ace-builds/archive</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
   </properties>
@@ -90,9 +90,28 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.4.1</version>
-      </plugin>
-    </plugins>
-  </build>
+	<version>2.4.2</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.scm</groupId>
+              <artifactId>maven-scm-provider-gitexe</artifactId>
+              <version>1.9</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>1.5.1</version>
+          <extensions>true</extensions>
+          <configuration>
+            <serverId>sonatype-nexus-staging</serverId>
+            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
 
 </project>
