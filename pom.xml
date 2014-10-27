@@ -40,6 +40,13 @@
     <upstream.version>1.1.7</upstream.version>
     <upstream.url>https://github.com/ajaxorg/ace-builds/archive</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+    <requirejs>
+        {
+            "paths": {
+                "ace": "src/ace"
+            }
+        }
+    </requirejs>
   </properties>
 
   <build>
