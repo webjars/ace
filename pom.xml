@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>ace</artifactId>
-  <version>1.2.8-SNAPSHOT</version>
+  <version>1.2.8</version>
   <name>ace</name>
   <description>WebJar for the ace editor</description>
   <url>http://webjars.org</url>
@@ -32,7 +32,7 @@
     <url>http://github.com/webjars/ace</url>
     <connection>scm:git:https://github.com/webjars/ace.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/ace.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>ace-1.2.8</tag>
   </scm>
   
   <properties>
